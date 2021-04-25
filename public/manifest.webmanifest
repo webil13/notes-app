@@ -3,7 +3,7 @@
     "background_color": "#f1f3f3",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "/?source=pwa",
     "name": "Notes App",
     "short_name": "Notes",
     "description": "Simple Notes taking",
@@ -450,7 +450,8 @@
         },
         {
           "src": "android/android-launchericon-144-144.png",
-          "sizes": "144x144"
+          "sizes": "144x144",
+          "purpose": "any maskable"
         },
         {
           "src": "android/android-launchericon-96-96.png",

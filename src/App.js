@@ -25,6 +25,14 @@ const theme = createMuiTheme({
 });
 
 function App() {
+
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
